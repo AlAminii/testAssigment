@@ -45,14 +45,28 @@ function diplayAllCards(pets){
   </figure>
   <div class="card-body text-start">
     <h1 class="font-bold text-lg mt-3">${pet.pet_name}</h1>
-    <p class="mt-2">If a dog chews shoes whose shoes does he choose?</p>
-     <div class=" gap-4 mt-4">
-      <p><span class="font-bold">Breed:</span> ${pet.breed}</p>
-      <p><span class="font-bold">Birth:</span> ${pet.date_of_birth}</p>
-      <p><span class="font-bold">Gender:</span> ${pet.gender}</p>
-      <p><span class="font-bold">Price:</span> ${pet.price}</p>
+   
+     <div class=" gap-4 mt-4 space-y-5">
+      <p class="flex items-center">
+       <img class="w-6 h-6" src="https://img.icons8.com/?size=100&id=GhW7E6TRTWHw&format=png&color=000000">
+      <span class="font-bold">Breed:</span> ${pet.breed}</p>
+      <p class="flex items-center">
+      <img class="w-6 h-6" src="https://img.icons8.com/?size=100&id=84997&format=png&color=000000">
+      <span class="font-bold">Birth:</span> ${pet.date_of_birth}</p>
+      <p class="flex items-center">
+      <img class="w-6 h-6" src="https://img.icons8.com/?size=100&id=WVVCQKOTlT87&format=png&color=000000">
+      <span class="font-bold">Gender:</span> ${pet.gender}</p>
+      <p class="flex items-center">
+       <img class="w-6 h-6" src="https://img.icons8.com/?size=100&id=85843&format=png&color=000000">
+      <span class="font-bold">Price:</span> ${pet.price}</p>
     </div>
     
+  </div>
+  <span><hr/></span>
+  <div class="flex justify-between mt-5">
+  <button class="btn"><img class="w-5 h-5" src="https://img.icons8.com/?size=100&id=82788&format=png&color=000000"/></button>
+  <button class="btn">Adopt</button>
+  <button class="btn">Details</button>
   </div>
 </div>
 
@@ -60,6 +74,6 @@ function diplayAllCards(pets){
         allCardContainers.append(div)
     }
 }
-loadAllCards()
 
 loadCategorybutton()
+loadAllCards()
